@@ -8,10 +8,24 @@
         </div>
       </div>
       <div class="row">
+        <div class="col">
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{this.id}} - {{this.burger_name}}
+            <button type="button" id="devour-btn" data-id="{{this.id}}" data-newDevoured="{{devour}}">Devour It</button>
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="row">
         <div class="col text-center">
-          <form>
-            <input type="text" name="burgername"><br>
-            <input type="submit" value="Submit">
+          <form class="create-form">
+            <div class="form-group">
+              <input type="text" name="burgername" id="burger-input"><br>
+              <input type="submit" value="Submit">
+            </div>
           </form>
           <p>Enter a burger you want to eat then click the "Submit" button</p>
         </div>
