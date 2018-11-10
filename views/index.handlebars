@@ -13,11 +13,12 @@
             {{#each burgers}}
             {{#unless devoured}}
             {{this.id}} - {{this.burger_name}}
-            <button type="button" id="devour-btn" data-id="{{this.id}}" data-newDevoured="{{devour}}">Devour It</button>
+            <button type="button" id="devour-btn">Devour It</button>
             {{/unless}}
             {{/each}}
           </ul>
         </div>
+        {{!-- add the area where the devoured burgers will go --}}
       </div>
       <div class="row">
         <div class="col text-center">

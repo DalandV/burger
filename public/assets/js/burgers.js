@@ -9,7 +9,7 @@ $(function () {
     // Add a new burger to the database
     $(".create-form").on("submit", function (event) {
         event.preventDefault();
-        console.log("yes")
+        console.log($("#burger-input").val().trim())
         var newBurger = {
             burger_name: $("#burger-input").val().trim(),
             devoured: 0
