@@ -12,8 +12,10 @@
           <ul>
             {{#each burgers}}
             {{#unless devoured}}
-            {{this.id}} - {{this.burger_name}}
-            <button type="button" id="devour-btn">Devour It</button>
+            <li>
+              {{this.id}} - {{this.burger_name}}
+              <button type="button" id="devour-btn">Devour It</button>
+            </li>
             {{/unless}}
             {{/each}}
           </ul>
