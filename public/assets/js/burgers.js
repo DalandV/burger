@@ -31,7 +31,7 @@ $(function() {
       location.reload();
     });
   });
-  $("#devour-btn").on("click", function(event) {
+  $(".devour-btn").on("click", function(event) {
     event.preventDefault();
 
     var id = $(this).data("id");
