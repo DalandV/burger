@@ -15,7 +15,7 @@
             {{#each burgers}}
             {{#unless devoured}}
             <li>
-              {{this.id}} - {{this.burger_name}}
+              {{this.burger_name}}
               <button type="button" class="devour-btn" data-id="{{id}}" data-newDevouredState="{{devoured}}">Devour
                 It</button>
             </li>
