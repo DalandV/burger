@@ -43,8 +43,7 @@ var orm = {
     var queryString = "SELECT * FROM " + table + ";";
     connection.query(queryString, function(err, result) {
       if (err) throw err;
-      // Successfully console.logs
-      console.log(result);
+
       cb(result);
     });
   },
@@ -57,8 +56,6 @@ var orm = {
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
-
-    console.log(queryString);
 
     connection.query(queryString, vals, function(err, result) {
       if (err) {
@@ -76,7 +73,6 @@ var orm = {
     queryString += " WHERE ";
     queryString += condition;
 
-    console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
