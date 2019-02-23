@@ -10,7 +10,7 @@
       </div>
       <div class="row">
         {{!-- Left Side Burger Display --}}
-        <div class="col">
+        <div class="col-6">
           <ul>
             {{#each burgers}}
             {{#unless devoured}}
@@ -20,6 +20,17 @@
                 It</button>
             </li>
             {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>
+              {{this.burger_name}}
+            </li>
+            {{/if}}
             {{/each}}
           </ul>
         </div>
