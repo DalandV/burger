@@ -15,8 +15,10 @@
             {{#each burgers}}
             {{#unless devoured}}
             <li>
-              {{this.burger_name}}
-              <button type="button" class="devour-btn btn" data-id="{{id}}">Devour
+              <div class="burger-li">
+                {{this.burger_name}}
+              </div>
+              <button type="button" class="devour-btn btn ml-3" data-id="{{id}}">Devour
                 It</button>
             </li>
             {{/unless}}

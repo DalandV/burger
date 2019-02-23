@@ -5,3 +5,8 @@ body {
 ul {
   list-style-type: none;
 }
+
+.burger-li {
+  background-color: antiquewhite;
+  padding: 10px 20px;
+}
