@@ -16,7 +16,7 @@
             {{#unless devoured}}
             <li>
               {{this.burger_name}}
-              <button type="button" class="devour-btn" data-id="{{id}}">Devour
+              <button type="button" class="devour-btn btn" data-id="{{id}}">Devour
                 It</button>
             </li>
             {{/unless}}
@@ -42,7 +42,7 @@
           <form class="create-form">
             <div class="form-group">
               <input type="text" name="burger_name" id="burger-input"><br>
-              <input type="submit" value="Submit">
+              <input class="btn" type="submit" value="Submit">
             </div>
           </form>
           <p>Enter a burger you want to eat then click the "Submit" button</p>
