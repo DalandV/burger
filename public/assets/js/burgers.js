@@ -1,10 +1,3 @@
-//
-//
-//
-// User inputs burger into text box.
-// user clicks submit button and the burger populates the left side of the screen along with a
-// "Devour It" button that will move the burger to the right side of the screen.
-
 $(function() {
   // Add a new burger to the database
   $(".create-form").on("submit", function(event) {
