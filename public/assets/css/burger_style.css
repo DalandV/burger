@@ -16,3 +16,13 @@ ul {
 .right-burger-li {
   border: 2px solid grey;
 }
+
+#burger-img {
+  height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  #burger-img {
+    height: 150px;
+  }
+}
