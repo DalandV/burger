@@ -12,3 +12,7 @@ ul {
   display: inline-block;
   width: 250px;
 }
+
+.right-burger-li {
+  border: 2px solid grey;
+}
