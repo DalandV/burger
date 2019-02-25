@@ -8,9 +8,7 @@ ul {
 
 .burger-li {
   background-color: antiquewhite;
-  padding: 10px 20px;
-  display: inline-block;
-  width: 250px;
+  /* padding: 10px 20px; */
 }
 
 .right-burger-li {
@@ -18,10 +16,19 @@ ul {
 }
 
 #burger-img {
-  height: 200px;
+  height: 150px;
 }
 
 @media only screen and (min-width: 768px) {
+  .burger-li {
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 250px;
+  }
+  .right-burger-li {
+    border: 2px solid grey;
+  }
   #burger-img {
     height: 150px;
   }
