@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-8">
+    <div class="col-10">
       <div class="row">
         {{!-- Burger Image --}}
         <div class="col text-center">
@@ -15,7 +15,7 @@
             {{#each burgers}}
             {{#unless devoured}}
             <li>
-              <div class="burger-li">
+              <div class="burger-li text-center mb-2">
                 {{this.burger_name}}
               </div>
               <button type="button" class="devour-btn btn ml-3" data-id="{{id}}">Devour
