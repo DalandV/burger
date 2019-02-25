@@ -16,15 +16,3 @@ ul {
 .right-burger-li {
   border: 2px solid grey;
 }
-
-@media only screen and (min-width: 768px) {
-  .burger-li {
-    background-color: antiquewhite;
-    padding: 10px 20px;
-    display: inline-block;
-    width: 250px;
-  }
-  .right-burger-li {
-    border: 2px solid grey;
-  }
-}
